@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="rw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SamugeAI — AI Assistant in Kinyarwanda & English</title>
+  <meta name="description" content="SamugeAI ni umufasha wa AI usubiza ibibazo mu Kinyarwanda no mu Cyongereza.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://nshiyimiyamasamuel272-hue.github.io/samuge-AI/">
+  <link rel="stylesheet" href="./style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"SamugeAI",
+    "applicationCategory":"EducationalApplication",
+    "description":"A bilingual AI assistant for English and Kinyarwanda.",
+    "url":"https://nshiyimiyamasamuel272-hue.github.io/samuge-AI/"
+  }
+  </script>
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="SamugeAI home"><span class="brand-mark">S</span> SamugeAI</a>
+    <label class="language-label" for="language">Language
+      <select id="language" aria-label="Choose language">
+        <option value="rw">Ikinyarwanda</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">YOUR BILINGUAL AI ASSISTANT</p>
+      <h1>Ikaze kuri SamugeAI</h1>
+      <p class="intro">Umufasha wawe wa AI usubiza ibibazo, agufasha kwiga, kwandika no guhanga — mu Kinyarwanda no mu Cyongereza.</p>
+    </section>
+
+    <section class="chat-card" aria-label="SamugeAI chat">
+      <div class="chat-heading">
+        <div><h2>Ganira na SamugeAI</h2><p id="status">Wandika ikibazo cyawe hasi.</p></div>
+        <span class="online-dot" aria-label="Chat"></span>
+      </div>
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="message assistant"><strong>SamugeAI</strong><p>Muraho! Ndi SamugeAI. Nakugirira akahe kamaro uyu munsi?</p></div>
+      </div>
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="message-input">Andika ubutumwa bwawe</label>
+        <textarea id="message-input" rows="2" maxlength="4000" placeholder="Andika ikibazo cyawe hano..." required></textarea>
+        <button id="send-button" type="submit">Ohereza ↑</button>
+      </form>
+      <p class="disclaimer">Ntushyire amakuru y'ibanga mu biganiro. Ibisubizo bya AI bishobora kugira amakosa.</p>
+    </section>
+
+    <section class="features">
+      <h2>Wakoresha SamugeAI iki?</h2>
+      <div class="feature-grid">
+        <article><h3>Kwiga</h3><p>Sobanukirwa amasomo n'ibitekerezo bishya.</p></article>
+        <article><h3>Kwandika</h3><p>Fasha gutegura inyandiko, emails n'ibitekerezo.</p></article>
+        <article><h3>Gukora code</h3><p>Shaka ibisobanuro n'ubufasha mu ikoranabuhanga.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> SamugeAI · Learn · Create · Discover</footer>
+</body>
+</html>
